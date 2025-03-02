@@ -1,0 +1,104 @@
+/* ==========================
+   1. BODY & BACKGROUND
+========================== */
+body {
+    margin-top: 70px;
+    background: url("iot_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Blur the Background Image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* ==========================
+   2. NAVBAR
+========================== */
+.navbar {
+    background-color: #1c1e21;
+}
+
+/* ==========================
+   3. HEADER SECTION
+========================== */
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+/* ==========================
+   4. PROJECTS SECTION
+========================== */
+#projects {
+    background-color: rgba(28, 28, 28, 0.9);
+    color: white;
+    padding: 30px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 40px;
+}
+
+/* ==========================
+   5. PROJECT CARDS
+========================== */
+.project-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.project-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* ==========================
+   6. CONTACT SECTION
+========================== */
+.section-container{
+      background-color: rgba(28, 28, 28, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1e21;
+    color: white;
+    margin-top: 30px;
+}
